@@ -1,0 +1,14 @@
+-DBVIO_AUTO_CONNECT
+-I..\snippets
+
+unragp.c
+main.c
+
+..\snippets\bvio.c
+..\snippets\_bvio\bvio.win32.file.cpp
+..\snippets\mem.c
+..\snippets\_mem\mem.win32.virtual.large.c
+
+..\snippets\bvcstr.cpp
+..\snippets\bvio.win32.cpp
+..\snippets\w32ex.cpp
