@@ -61,11 +61,11 @@ bool __WDECL UnRagp(BVIO* const lpbvioRagp, bool (__WDECL* lpfnForEach)(char con
 
                 if(!lpfnForEach(File.szName, lpucData, File.ulLength, lpContext))
                 {
-                    MemTFree(&lpucData);
+                    MemTOptionalFree(&lpucData);
                     break;
                 }
 
-                MemTFree(&lpucData);
+                MemTOptionalFree(&lpucData);
             }
 
             bSuccess = ulIdx==Head.ulCount;
