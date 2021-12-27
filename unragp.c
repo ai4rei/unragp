@@ -38,7 +38,7 @@ bool __WDECL UnRagp(BVIO* const lpbvioRagp, bool (__WDECL* lpfnForEach)(char con
             {
                 ubyte_t* lpucData = NULL;
 
-                if(!BvIORndPull(lpbvioRagp, uIndexOffset, &File, sizeof(File), &uPulled) && sizeof(File)==uPulled)
+                if(!BvIORndPull(lpbvioRagp, uIndexOffset, &File, sizeof(File), &uPulled) || sizeof(File)!=uPulled)
                 {
                     break;
                 }
